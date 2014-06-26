@@ -2,9 +2,10 @@
 
 body {
   background: #191919;
-  color:white;
+  
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 300;
+  color:#DFE2DB;
   
 
 }
@@ -17,7 +18,7 @@ a{
 a:hover {
   color:#FFF056;
 }
-}
+
 
 hr {
   border-color:#DFE2DB;
@@ -88,9 +89,10 @@ ul {
   width:100%;
   height:60px;
   font-size: 10px;
-  
-  
   background-color: #191919;
+  
+  
+  
 }
 
 .project {
@@ -98,7 +100,7 @@ ul {
   margin-bottom: 15px;
   font-size: .9rem;
   text-align: left;
-  padding: 10px;
+  
   min-height: 230px;
   width:100%;
 
@@ -109,20 +111,19 @@ ul {
   display: inline-block;
   border: 5px solid #DFE2DB;
   width: 30%;
-  overflow:auto;
+  max-height: 200px;
+  position: relative;
   float:left;
- 
+  overflow: auto;
   
 }
 
-.thumbnail_container:hover {
-  border: 5px solid #FFF056;
-}
+
 
 
 .thumbnail {
   width:100%;
-  height:100%;
+  
 }
 
 .description {
@@ -134,13 +135,59 @@ ul {
 
 .title {
   font-size: 1.1rem;
-  font #ffffff;
+  
 
 }
 
 .title:hover {
   color:#FFF056;
 }
+
+
+.change {
+  display:inline-block;
+}
+/* Theme 1 */
+
+
+  .theme_1 a{
+    color:#E3AE57;
+  }
+
+  .theme_1 a:hover{
+    color:white;
+  }
+
+
+/* Theme 2 */
+
+  .theme_2 a{
+    color:#000000;
+  }
+
+  .theme_2 a:hover {
+    color:#424242;
+  }
+
+/* Theme 3 */
+
+  .theme_3 a{
+    color:#383127;
+  }
+
+  .theme_3 a:hover {
+    color:#70AB8F;
+  }
+
+
+/* Theme 4 */
+  .theme_4 a{
+    color:white;
+  }
+
+  .theme_4 a:hover{
+    color::white;
+  }
 
 
 

@@ -9812,34 +9812,65 @@ $('.link').click(function() {
 
 });
 
+$("#theme_1").click(function() {
+    var newClass = $(this).val();
+    $('#look').attr('class', newClass);
+    $('body').css("background-color", "#232B2B");
+    $('body').css("color", "#E3AE57");
+    $('hr').css("border-color", "#DC3D24");
+    $('.title').css("color", "#DC3D24");
+    $('.linkdetails').css("color", "#DC3D24");
+    $('.thumbnail_container').css("border", "5px solid #E3AE57");
+    $('.footer').css("background-color", "#232B2B");
+    $('.maintext').css("color", "#E3AE57");
+  
 
-// The plugin code
-(function($){
-    $.fn.parallax = function(options){
-        var $$ = $(this);
-        offset = $$.offset();
-        var defaults = {
-            "start": 0,
-            "stop": offset.top + $$.height(),
-            "coeff": 0.95
-        };
-        var opts = $.extend(defaults, options);
-        return this.each(function(){
-            $(window).bind('scroll', function() {
-                windowTop = $(window).scrollTop();
-                if((windowTop >= opts.start) && (windowTop <= opts.stop)) {
-                    newCoord = windowTop * opts.coeff;
-                    $$.css({
-                        "background-position": "0 "+ newCoord + "px"
-                    });
-                }
-            });
-        });
-    };
-})(jQuery);
 
-// call the plugin
-$('.space').parallax({ "coeff":-1.65 });
-$('.space .inner').parallax({ "coeff":1.15 });
+    });
+
+
+$("#theme_2").click(function() {
+    var newClass = $(this).val();
+    $('#look').attr('class', newClass);
+    $('body').css("background-color", "#8A0651");
+    $('body').css("color", "#000000");
+    $('hr').css("border-color", "#ffffff");
+    $('.title').css("color", "#ffffff");
+    $('.linkdetails').css("color", "#ffffff");
+    $('.thumbnail_container').css("border", "5px solid #000000");
+    $('.footer').css("background-color", "#8A0651");
+    $('.maintext').css("color", "#000000");
+
+
+    });
+
+$("#theme_3").click(function() {
+    var newClass = $(this).val();
+    $('#look').attr('class', newClass);
+    $('body').css("background-color", "#E4DBBF");
+    $('body').css("color", "#383127");
+    $('hr').css("border-color", "#DC5B21");
+    $('.title').css("color", "#DC5B21");
+    $('.linkdetails').css("color", "#DC5B21");
+    $('.thumbnail_container').css("border", "5px solid #383127");
+    $('.footer').css("background-color", "#E4DBBF");
+    $('.maintext').css("color", "#383127");
+
+
+    });
+
+$("#theme_4").click(function() {
+    var newClass = $(this).val();
+    $('#look').attr('class', newClass);
+    $('body').css("background-color", "#191919");
+    $('body').css("color", "#DFE2DB");
+    $('hr').css("border-color", "white");
+    $('.title').css("color", "white");
+    $('.linkdetails').css("color", "white");
+    $('.thumbnail_container').css("border", "5px solid white");
+    $('.footer').css("background-color", "#191919");
+    $('.maintext').css("color", "#DFE2DB");
+        
+    });
 
 });
