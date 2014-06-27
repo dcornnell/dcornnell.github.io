@@ -9864,10 +9864,10 @@ $("#theme_4").click(function() {
     $('#look').attr('class', newClass);
     $('body').css("background-color", "#191919");
     $('body').css("color", "#DFE2DB");
-    $('hr').css("border-color", "white");
-    $('.title').css("color", "white");
-    $('.linkdetails').css("color", "white");
-    $('.thumbnail_container').css("border", "5px solid white");
+    $('hr').css("border-color", "#ffffff");
+    $('.title').css("color", "ffffff");
+    $('.linkdetails').css("color", "#ffffff");
+    $('.thumbnail_container').css("border", "5px solid #ffffff");
     $('.footer').css("background-color", "#191919");
     $('.maintext').css("color", "#DFE2DB");
         
