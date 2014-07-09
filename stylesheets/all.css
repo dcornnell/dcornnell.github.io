@@ -10,12 +10,23 @@ body {
 
 }
 
+
+
+
+select {
+  display:none;
+}
+
 a{
   text-decoration: none;
   color:#DFE2DB;
 }
 
 a:hover {
+  color:#FFF056;
+}
+
+.visible-link {
   color:#FFF056;
 }
 

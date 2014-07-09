@@ -26,21 +26,26 @@
       <br>
       <ul>
         <li>
-          <a class='link' data-link='first' href='#'>
+          <a class='link' data-link='second' href='#'>
             Bio
           </a>
         </li>
         <li>
-          <a class='link' data-link='second' href='#'>
+          <a class='link' data-link='third' href='#'>
             Projects
           </a>
         </li>
         <li>
-          <a class='link' data-link='third' href='#'>
+          <a class='link' data-link='fourth' href='#'>
             Contact
           </a>
         </li>
       </ul>
+      <select>
+        <option data-link='second' href='#' selected='selected'>Bio</option>
+        <option data-link='third' href='#'>Projects</option>
+        <option data-link='fourth' href='#'>Contact</option>
+      </select>
     </div>
     <div class='main'>
       <div class='detailscontainer'>
@@ -48,11 +53,26 @@
           <h1>About me</h1>
           <div class='maintext'>
             Programming fanatic and student.  Spent several intense months with
-            <a target="_blank" href="http://theironyard.com/">The Iron Yard</a>
+            <a target="_blank" class="visible-link" href="http://theironyard.com/">The Iron Yard</a>
             learning Ruby on Rails and front end technologies.  Before that I was working in Marketing.  Now I spend my days learning everything I can about programming and technology.  When I'm not doing that I'm rock climbing, or playing the banjo.
           </div>
         </div>
         <div class='linkdetails' data-link='second'>
+          <h1>Bio</h1>
+          <p>
+            Programming fanatic and student.  I'm originally from Tampa, Florida. I graduated with a Bachelors of Science in Advertising from the University of Florida with a minor in History in 2008. I have lived and worked in marketing in the Atlanta area since 2009. More recently I have spent several intense months with
+            <a target="_blank" class="visible-link" href="http://theironyard.com/">The Iron Yard</a>
+            learning Ruby on Rails and front end technologies. Now I spend my days learning everything I can about programming and technology.  When I'm not doing that I'm rock climbing, or playing the banjo.
+          </p>
+          <br>
+          <p>
+            <a target="_blank" href="mailto:daniel.cornnell@gmail.com"><img src="/images/email.png" /></a>
+            <a target="_blank" href="https://github.com/dcornnell"><img src="/images/github.png" /></a>
+            <a target="_blank" href="https://www.linkedin.com/pub/daniel-cornnell/3a/7bb/25"><img src="/images/linkedin.png" /></a>
+            <a target="_blank" href="https://twitter.com/DanCornnell"><img src="/images/twitter.png" /></a>
+          </p>
+        </div>
+        <div class='linkdetails' data-link='third'>
           <h1>Projects</h1>
           <div class='maintext'>
             <div class='project'>
@@ -61,7 +81,7 @@
               </div>
               <div class='description'>
                 <div class='title'>
-                  <a target="_blank" href="http://climbtracker.herokuapp.com/">A web app for tracking rock climbing.</a>
+                  <a target="_blank" class="visible-link" href="http://climbtracker.herokuapp.com/">A web app for tracking rock climbing.</a>
                 </div>
                 <p>
                   An application for rock climbers to track and view stats about attempts they make on rock climbing routes. Users are also able to create profiles, view locations, add routes, as well as tag and comment on routes.
@@ -70,7 +90,7 @@
                   Made with Ruby, Rails, Postgres, Haml, JavaScript, hooks into the Facebook API with the omniauth-facebook gem, geolocation services are done with the geocoder gem.
                 </p>
                 <p>
-                  <a target="_blank" href="https://github.com/dcornnell/final_project">check it out on github</a>
+                  <a target="_blank" class="visible-link" href="https://github.com/dcornnell/final_project">check it out on github</a>
                 </p>
               </div>
             </div>
@@ -82,7 +102,7 @@
               </div>
               <div class='description'>
                 <div class='title'>
-                  <a target="_blank" href="http://frozen-beach-7687.herokuapp.com/">Homework Tracker App.</a>
+                  <a target="_blank" class="visible-link" href="http://frozen-beach-7687.herokuapp.com/">Homework Tracker App.</a>
                 </div>
                 <p>
                   An application for submitting homework assignments for review. Users can sign in as either a teacher or student. As a teacher, you can create assignments, view students submissions and comment on them, as a student you can join a course view all assignments for that course and make submissions.
@@ -91,7 +111,7 @@
                   Made with Ruby, Rails, Postgres, Haml, CSS, JavaScript.
                 </p>
                 <p>
-                  <a target="_blank" href="https://github.com/dcornnell/homework_app">check it out on github</a>
+                  <a target="_blank" class="visible-link" href="https://github.com/dcornnell/homework_app">check it out on github</a>
                 </p>
               </div>
             </div>
@@ -103,16 +123,16 @@
               </div>
               <div class='description'>
                 <div class='title'>
-                  <a target="_blank" href="http://cryptic-wildwood-1457.herokuapp.com/">A simple bird app.</a>
+                  <a target="_blank" class="visible-link" href="http://climbtracker.herokuapp.com/">A simple bird app.</a>
                 </div>
                 <p>
-                  A one page site for creating birds. Birds can have different sizes, colors and names.
+                  A one page site for animated creating birds. The birds move and respond to being clicked on. visitors to the site can create, update, and remove birds. Birds can have different sizes, colors and names.
                 </p>
                 <p>
                   Made with Ruby, Rails, Postgres, Haml, CSS, JavaScript, JSON
                 </p>
                 <p>
-                  <a target="_blank" href="https://github.com/dcornnell/birds">check it out on github</a>
+                  <a target="_blank" class="visible-link" href="https://github.com/dcornnell/birds">check it out on github</a>
                 </p>
               </div>
             </div>
@@ -122,7 +142,7 @@
               </div>
               <div class='description'>
                 <div class='title'>
-                  <a target="_blank" href="http://immense-castle-3089.herokuapp.com/">User Last</a>
+                  <a target="_blank" class="visible-link" href="http://immense-castle-3089.herokuapp.com/">User Last.</a>
                 </div>
                 <p>
                   An application that was created to learn, testing, mailers, login, JavaScript. Users can create accounts and log in.  If they check their profile after 10 days they cannot be removed.
@@ -131,7 +151,7 @@
                   Made with Ruby, Rails, Postgres, Haml, CSS, JavaScript
                 </p>
                 <p>
-                  <a target="_blank" href="https://github.com/dcornnell/homework_app">check it out on github</a>
+                  <a target="_blank" class="visible-link" href="https://github.com/dcornnell/homework_app">check it out on github</a>
                 </p>
               </div>
             </div>
@@ -139,7 +159,7 @@
             <p></p>
           </div>
         </div>
-        <div class='linkdetails' data-link='third'>
+        <div class='linkdetails' data-link='fourth'>
           <h1>Contact</h1>
           <b>Phone:</b>
           727-421-7609
@@ -174,6 +194,7 @@
   </div>
 </div>
 
+  
  
   
   </body>
